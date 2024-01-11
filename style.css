@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     height: 100%;
+    overflow: hidden;
+    padding: 0;
 }
 
 .montanha-primeiro-slide{
@@ -32,7 +34,6 @@ body, html {
     box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.24);
     line-height: 1.9;
     transition: 1.5s ease;
-
 }
 
 .texto-primeiro-slide:hover {
@@ -78,7 +79,40 @@ body, html {
 }
 
 .rodape {
-    margin-top: 245%; /* Empurra o rodapé para a parte inferior da div .menu-lateral */
+    margin-top: 245%;
     padding: 10px;
     text-align: center;
+}
+
+/* Aqui pra baixo é relacionado A Marca*/
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .white-bg {
+    flex: 1;
+    background-image: url(Photo-gallery/Cachoeira.jpg);
+    height: 100vh;
+  }
+
+  .black-bg {
+    flex: 1;
+    background-color: #1a5e63;
+    height: 100vh;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    justify-content: center;
+    border-end-end-radius: 40px;
+  }
+
+  .marca-texto{
+    line-height: 1.9;
+    transition: 1.5s ease-in-out;
+    font-family: sans-serif;
+    margin: 30px 80px;
 }
